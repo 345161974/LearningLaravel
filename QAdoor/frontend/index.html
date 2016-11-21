@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <title>QAdoor问答门</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/5.0.0/normalize.css" rel="stylesheet">
+    <link href="css/public.css" rel="stylesheet">
+    <link href="css/qadoor.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <div class="alert alert-danger topframe" role="alert">目测你是比较恋旧的人啊，比较喜欢一些古董级的玩意,你的浏览器实在<strong>太太太太太太旧了</strong>，告别旧爱，升级浏览器开始一段轰轰烈烈的新旅程吧！
+        <a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+    <![endif]-->
+</head>
+<body>
+<header id="header" class="container">
+    <div class="head row">
+        <div class="logo"><img src="img/logo.png" alt="QAdoor"></div>
+        <div class="nav nav_first">
+            <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="#">推荐</a></li>
+                        <li><a href="answer.html">问答</a></li>
+                        <li><a href="#">Android</a></li>
+                        <li><a href="#">前端</a></li>
+                        <li><a href="#">IOS</a></li>
+                        <li><a href="#">后台</a></li>
+                        <li><a href="#">产品</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-heart"></i>注册</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>登录</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+        <!-- /.container-fluid -->
+
+        <div class="search">
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="搜索关键词">
+                <button type="button" class="btn btn-default" id="examplebtn1">搜索</button>
+            </div>
+        </div>
+        <div class="login">
+            <a href="#">注册 </a>·<a href="#"> 登录</a>
+        </div>
+    </div>
+</header>
+<div class="container-fluid nav_second">
+    <div class="nav  container">
+        <ul class="clear_fix">
+            <li><a href="#"><i class="glyphicon glyphicon-home"></i>Home</a></li>
+            <li><a href="list/javascript">JavaScript</a></li>
+            <li><a href="#">php</a></li>
+            <li><a href="#">python</a></li>
+            <li><a href="#">java</a></li>
+            <li><a href="#">mysql</a></li>
+            <li><a href="#">ios</a></li>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">node</a></li>
+            <li><a href="#">H5</a></li>
+            <li><a href="#">linux</a></li>
+            <li><a href="#">C++</a></li>
+            <li><a href="#">Css3</a></li>
+            <li><a href="#">git</a></li>
+            <li><a href="#">golang</a></li>
+            <li><a href="#">&gt;&gt;</a></li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+
+<div class="container row">
+    <div class="col-xs-12 col-md-9 menu_floor">
+        <section class="android floor">
+            <div class="title_head mt20">
+                <div class="title_name">
+                    ANDROID
+                </div>
+                <div class="title_detail">
+                    <ul>
+                        <li class="mr20 active">
+                            <a href="#news_android" data-toggle="tab">最新的</a></li>
+                        <li><a href="#hot_android" data-toggle="tab">热门的</a></li>
+                    </ul>
+                    <div class="tips">
+                        <a href="#">Content、</a><a href="#">WinForms、</a><a href="#">WPF、</a><a href="#">UWP</a>
+                    </div>
+                    <div class="more">
+                        <a href="#">更多相关标签>> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content tab-content" id="myTabContent1">
+                <div class="tab-pane fade in active" id="news_android">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-pane fade" id="hot_android">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
+        <!--web-->
+        <section class="web floor">
+            <div class="title_head mt20">
+                <div class="title_name">
+                    Web 前端
+                </div>
+                <div class="title_detail">
+                    <ul>
+                        <li class="mr20 active">
+                            <a href="#news_web" data-toggle="tab">最新的</a></li>
+                        <li><a href="#hot_web" data-toggle="tab">热门的</a></li>
+                    </ul>
+                    <div class="tips">
+                        <a href="#">Content、</a><a href="#">WinForms、</a><a href="#">WPF、</a><a href="#">UWP</a>
+                    </div>
+                    <div class="more">
+                        <a href="#">更多相关标签>> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content tab-content" id="myTabContent2">
+                <div class="tab-pane fade in active" id="news_web">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-pane fade" id="hot_web">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!--IOS-->
+        <section class="IOS floor">
+            <div class="title_head mt20">
+                <div class="title_name">
+                    IOS
+                </div>
+                <div class="title_detail">
+                    <ul>
+                        <li class="mr20 active">
+                            <a href="#news_ios" data-toggle="tab">最新的</a></li>
+                        <li><a href="#hot_ios" data-toggle="tab">热门的</a></li>
+                    </ul>
+                    <div class="tips">
+                        <a href="#">Content、</a><a href="#">WinForms、</a><a href="#">WPF、</a><a href="#">UWP</a>
+                    </div>
+                    <div class="more">
+                        <a href="#">更多相关标签>> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content tab-content" id="myTabContent3">
+                <div class="tab-pane fade in active" id="news_ios">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-pane fade" id="hot_ios">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!--后台-->
+        <section class="back floor">
+            <div class="title_head mt20">
+                <div class="title_name">
+                    后台
+                </div>
+                <div class="title_detail">
+                    <ul>
+                        <li class="mr20 active">
+                            <a href="#news_back" data-toggle="tab">最新的</a></li>
+                        <li><a href="#hot_back" data-toggle="tab">热门的</a></li>
+                    </ul>
+                    <div class="tips">
+                        <a href="#">Content、</a><a href="#">WinForms、</a><a href="#">WPF、</a><a href="#">UWP</a>
+                    </div>
+                    <div class="more">
+                        <a href="#">更多相关标签>> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content tab-content" id="myTabContent4">
+                <div class="tab-pane fade in active" id="news_back">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-pane fade" id="hot_back">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <!--产品-->
+        <section class="pm floor">
+            <div class="title_head mt20">
+                <div class="title_name">
+                    产品
+                </div>
+                <div class="title_detail">
+                    <ul>
+                        <li class="mr20 active">
+                            <a href="#news_pm" data-toggle="tab">最新的</a></li>
+                        <li><a href="#hot_pm" data-toggle="tab">热门的</a></li>
+                    </ul>
+                    <div class="tips">
+                        <a href="#">Content、</a><a href="#">WinForms、</a><a href="#">WPF、</a><a href="#">UWP</a>
+                    </div>
+                    <div class="more">
+                        <a href="#">更多相关标签>> </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content tab-content" id="myTabContent5">
+                <div class="tab-pane fade in active" id="news_pm">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-pane fade" id="hot_pm">
+                    <ul>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data-mongoDB打印出执行的语句可以不
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_no"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚进行了提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行了提问
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_ok"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问点啥内
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句进行查询设置数据
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                        <li class="clear_fix">
+                            <ul class="num clear_fix">
+                                <li class="num_vote"><i>0</i>投票</li>
+                                <li class="num_answer_mid"><i>10</i>回答</li>
+                                <li class="num_scan"><i>50</i>浏览</li>
+                            </ul>
+                            <div class="question">
+                                <div class="questioner mt20">
+                                    <a class="qser_name">Mno</a> 刚刚提问
+                                </div>
+                                <a href="#" class="describe">
+                                    用spring-data语句测试
+                                </a>
+                                <a href="#" class="fllt">mongodb3.x</a>
+                                <a href="#" class="fllt">springmvc</a>
+                                <a href="#" class="fllt">springmvc</a>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!--侧栏-->
+    <div class="col-xs-12 col-md-3 sub_menu">
+        <section class="login_info mt20">
+            <div class="side-ask alert alert-warning">
+                <p>
+                    QAdoor问答门是一个专注于解决编程问题，提高开发技能的社区。
+                </p>
+                <a href="/user/oauth/google" class="mt20 btn btn-google btn-block">
+                    <span class="icon-qa-bg-google"></span>
+                    使用 Google 登录
+                </a>
+                <a href="/user/oauth/weibo" class="mt20 btn btn-weibo btn-block">
+                    <span class="icon-qa-bg-weibo"></span>
+                    使用微博登录
+                </a>
+                <a href="/user/oauth/weixin" class="mt20 btn btn-weixin btn-block">
+                    <span class="icon-qa-bg-weixin"></span>
+                    使用微信登录
+                </a>
+
+                <div class="mt20 side-system-notice">
+                    <i class="fa fa-bullhorn pull-left"></i><a class="side-system-notice--title"
+                                                               href="http://sfdc-2016hz.bagevent.com">SFDC
+                    杭州开发者大会，优惠售票进行中，长三角伙伴看过来！</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="Headline mt40">
+            <div class="widget_headline widget-box mt20 mb30">
+                <h2 class="h4 widget-box_title">最新头条</h2>
+                <ul class="list_block pt5 pl20 pb5">
+                    <li class="pt10">
+                        <a href="#" class="fc">微观SOA：服务设计原则及其实践方式</a>
+
+                        <p class=""><span class="mr5 praise">0 赞</span> | <span class="ml5">0 评论</span></p>
+                    </li>
+                    <li class="pt10">
+                        <a href="#" class="fc">前端工程简介</a>
+
+                        <p class=""><span class="mr5 praise">0 赞</span> | <span class="ml5">0 评论</span></p>
+                    </li>
+                    <li class="pt10">
+                        <a href="#" class="fc">Node 应用开发</a>
+
+                        <p class=""><span class="mr5 praise">0 赞</span> | <span class="ml5">0 评论</span></p>
+                    </li>
+                    <li class="pt10">
+                        <a href="#" class="fc">React 技术栈</a>
+
+                        <p class=""><span class="mr5 praise">1 赞</span> | <span class="ml5">0 评论</span></p>
+                    </li>
+                    <li class="pt10 pb10">
+                        <a href="#" class="fc">前端开发的历史和趋势</a>
+
+                        <p class=""><span class="mr5 praise">1 赞</span> | <span class="ml5">0 评论</span></p>
+                    </li>
+                    <a href="#" target="_blank" class="f12 fc headline_more">更多头条内容→</a>
+                </ul>
+            </div>
+        </section>
+
+        <section class="hot_favorite mt40">
+            <p class="favorite_title mb20">热门收藏夹 <span><a href="#">换一组</a></span></p>
+            <ul class="favorite_content">
+                <li class="favorite_list">
+                    <img class="favorite_icon" src="img/10.png" width="32">
+                    <div class="favorite_body">
+                        <a target="_blank" class="" href="#">增加前端姿势</a>
+                        <p class="favorite_num">
+                            <span>155</span> 个条目 <span class="division">|</span> <span>150</span> 人关注
+                        </p>
+                    </div>
+                </li>
+                <li class="favorite_list">
+                    <img class="favorite_icon" src="img/10.png" width="32">
+                    <div class="favorite_body">
+                        <a target="_blank" class="" href="#">增加前端姿势</a>
+                        <p class="favorite_num">
+                            <span>155</span> 个条目 <span class="division">|</span> <span>150</span> 人关注
+                        </p>
+                    </div>
+                </li>
+                <li class="favorite_list">
+                    <img class="favorite_icon" src="img/10.png" width="32">
+                    <div class="favorite_body">
+                        <a target="_blank" class="" href="#">增加前端姿势</a>
+                        <p class="favorite_num">
+                            <span>155</span> 个条目 <span class="division">|</span> <span>150</span> 人关注
+                        </p>
+                    </div>
+                </li>
+                <li class="favorite_list">
+                    <img class="favorite_icon" src="img/10.png" width="32">
+                    <div class="favorite_body">
+                        <a target="_blank" class="" href="#">增加前端姿势</a>
+                        <p class="favorite_num">
+                            <span>155</span> 个条目 <span class="division">|</span> <span>150</span> 人关注
+                        </p>
+                    </div>
+                </li>
+                <li class="favorite_list">
+                    <img class="favorite_icon" src="img/10.png" width="32">
+                    <div class="favorite_body">
+                        <a target="_blank" class="" href="#">增加前端姿势</a>
+                        <p class="favorite_num">
+                            <span>155</span> 个条目 <span class="division">|</span> <span>150</span> 人关注
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+    </div>
+</div>
+<!--尾部-->
+<footer class="container-fluid row mt40">
+    <div class="container row mt40">
+        <dl class="col-xs-12 col-sm-6 col-md-3 about clear_fix">
+        <dt class="mb10">网站相关</dt>
+        <dd><a href="#">关于我们</a></dd>
+        <dd><a href="#">服务条款</a></dd>
+        <dd><a href="#">帮助中心</a></dd>
+        <dd><a href="#">声望与权限</a></dd>
+        <dd><a href="#">编辑器语法</a></dd>
+        <dd><a href="#">每周精选</a></dd>
+        <dd><a href="#">App 下载</a></dd>
+        <dd><a href="#">社区服务中心</a></dd>
+    </dl>
+
+    <dl class="col-xs-12 col-sm-6 col-md-3 contact clear_fix">
+        <dt class="mb10">联系合作</dt>
+        <dd><a href="#">联系我们</a></dd>
+        <dd><a href="#">加入我们</a></dd>
+        <dd><a href="#">合作伙伴</a></dd>
+        <dd><a href="#">媒体报道</a></dd>
+        <dd><a href="#">建议反馈</a></dd>
+    </dl>
+    <dl class="col-xs-12 col-sm-6 col-md-3 link clear_fix">
+        <dt class="mb10">常用链接</dt>
+        <dd><a href="#" target="_blank">笔记插件: Chrome</a></dd>
+        <dd><a href="#" target="_blank">笔记插件: Firefox</a></dd>
+        <dd><a href="#" target="_blank">文档镜像</a></dd>
+        <dd><a href="#" target="_blank">社区访谈</a></dd>
+        <dd><a href="#" target="_blank">D-DAY 技术沙龙</a></dd>
+        <dd><a href="#" target="_blank">黑客马拉松 Hackathon</a></dd>
+        <dd><a href="#" target="_blank">域名搜索注册</a></dd>
+    </dl>
+    <dl class="col-xs-12 col-sm-6 col-md-3 follow clear_fix">
+        <dt class="mb10">关注我们</dt>
+        <dd><a href="#" target="_blank">Github</a></dd>
+        <dd><a href="#" target="_blank">Twitter</a></dd>
+        <dd><a href="#" target="_blank">新浪微博</a></dd>
+        <dd><a href="#" target="_blank">团队日志</a></dd>
+        <dd><a href="#" target="_blank">产品技术日志</a></dd>
+        <dd><a href="#" target="_blank">社区运营日志</a></dd>
+        <dd><a href="#" target="_blank">市场运营日志</a></dd>
+    </dl>
+    <div class="copyright  col-xs-12 col-md-12 mb40">
+        © 2013-2016 沪ICP备11008151号 沪公网安备11010802014853
+    </div>
+    </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
